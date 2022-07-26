@@ -8,6 +8,7 @@ declare global {
   const $ref: typeof import('vue/macros')['$ref']
   const $shallowRef: typeof import('vue/macros')['$shallowRef']
   const $toRef: typeof import('vue/macros')['$toRef']
+  const : typeof import('./src/composables/minus')['']
   const EffectScope: typeof import('vue')['EffectScope']
   const asyncComputed: typeof import('@vueuse/core')['asyncComputed']
   const autoResetRef: typeof import('@vueuse/core')['autoResetRef']
@@ -50,6 +51,12 @@ declare global {
   const makeDestructurable: typeof import('@vueuse/core')['makeDestructurable']
   const markRaw: typeof import('vue')['markRaw']
   const nextTick: typeof import('vue')['nextTick']
+  const numA: typeof import('./src/composables/sum')['numA']
+  const numB: typeof import('./src/composables/sum')['numB']
+  const numC: typeof import('./src/composables/minus')['numC']
+  const numD: typeof import('./src/composables/minus')['numD']
+  const numE: typeof import('./src/composables/divide')['numE']
+  const numF: typeof import('./src/composables/divide')['numF']
   const onActivated: typeof import('vue')['onActivated']
   const onBeforeMount: typeof import('vue')['onBeforeMount']
   const onBeforeUnmount: typeof import('vue')['onBeforeUnmount']
@@ -268,6 +275,7 @@ declare module '@vue/runtime-core' {
     readonly $ref: UnwrapRef<typeof import('vue/macros')['$ref']>
     readonly $shallowRef: UnwrapRef<typeof import('vue/macros')['$shallowRef']>
     readonly $toRef: UnwrapRef<typeof import('vue/macros')['$toRef']>
+    readonly : UnwrapRef<typeof import('./src/composables/minus')['']>
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
     readonly asyncComputed: UnwrapRef<typeof import('@vueuse/core')['asyncComputed']>
     readonly autoResetRef: UnwrapRef<typeof import('@vueuse/core')['autoResetRef']>
@@ -310,6 +318,12 @@ declare module '@vue/runtime-core' {
     readonly makeDestructurable: UnwrapRef<typeof import('@vueuse/core')['makeDestructurable']>
     readonly markRaw: UnwrapRef<typeof import('vue')['markRaw']>
     readonly nextTick: UnwrapRef<typeof import('vue')['nextTick']>
+    readonly numA: UnwrapRef<typeof import('./src/composables/sum')['numA']>
+    readonly numB: UnwrapRef<typeof import('./src/composables/sum')['numB']>
+    readonly numC: UnwrapRef<typeof import('./src/composables/minus')['numC']>
+    readonly numD: UnwrapRef<typeof import('./src/composables/minus')['numD']>
+    readonly numE: UnwrapRef<typeof import('./src/composables/divide')['numE']>
+    readonly numF: UnwrapRef<typeof import('./src/composables/divide')['numF']>
     readonly onActivated: UnwrapRef<typeof import('vue')['onActivated']>
     readonly onBeforeMount: UnwrapRef<typeof import('vue')['onBeforeMount']>
     readonly onBeforeUnmount: UnwrapRef<typeof import('vue')['onBeforeUnmount']>
